@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css"
+    />
+
+    <script defer src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script
+      defer
+      src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap5.min.js"
+    ></script>
+    <script defer src="script.js"></script>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <title>AMSA</title>
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" src="materials/AMSA_logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Events
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="timeline.html">Timeline</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="calendar.html">Calendar</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="winners.html">Winners</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle nav-link active"
+                aria-current="page"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Students
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="mtech.html">M Tech</a></li>
+                <li><a class="dropdown-item" href="ms.html">M S</a></li>
+                <li><a class="dropdown-item" href="phd.html">PhD</a></li>
+                <li><a class="dropdown-item" href="all.html">All</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="newsletter.html">Newsletter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="merchandise.html">Merchandise</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Opportunities
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="internship.html">Internship</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="placement.html">Placement</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="phdandpostdoc.html"
+                    >PhD & PostDoc</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="wellness.html">Wellness</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="links.html">Links</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation bar -->
+
+    <!-- Table -->
+    <div class="container my-5">
+      <table id="example" class="table table" style="width: 100%">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Roll number</th>
+            <th>Guide name</th>
+            <th>Keywords of area of research</th>
+            <th>Skills</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pavankumar Pujar</td>
+            <td>AM22M007</td>
+            <td>Prof. K Ramesh</td>
+            <td>Deep Learning applied to Digital Photoelasticity</td>
+            <td>Python, PyTorch, TensorFlow, C++</td>
+          </tr>
+          <tr>
+            <td>Mohit Shamrao Gadhwar</td>
+            <td>AM22M005</td>
+            <td>Prof. Ganesh Tamadapu</td>
+            <td>
+              Mechanics of magnetic gels, Mechanics of shelled microbubble
+            </td>
+            <td>MATLAB, COMSOL,Abaqus</td>
+          </tr>
+          <tr>
+            <td>Deependra Kumar</td>
+            <td>AM22M021</td>
+            <td>Prof Kiran Raj M</td>
+            <td>Droplet Impact on Porous Surface</td>
+            <td>Image Processing (MATLAB, Python)</td>
+          </tr>
+          <tr>
+            <td>Yakeen khona</td>
+            <td>AM22M020</td>
+            <td>Prof Arun Kumar Thitthai</td>
+            <td>Point of care ultrasound device development</td>
+            <td>
+              MATLAB,CUDA C, Digital Signal Processing, Medical Image Analysis
+            </td>
+          </tr>
+          <tr>
+            <td>Prakash Dev</td>
+            <td>AM22M014</td>
+            <td>Prof. Ramakrishnan S</td>
+            <td></td>
+            <td>Python, Matlab</td>
+          </tr>
+          <tr>
+            <td>Pallavi G</td>
+            <td>AM22M006</td>
+            <td>Prof. M S Sivakumar</td>
+            <td>Developing Deep learning algorithms for structural analysis</td>
+            <td>Python,Machine learning,Deep learning</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Table -->
+
+    <!-- Footer -->
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center bg-light py-1 fixed-bottom"
+    >
+      <p class="col-md-4 mb-0 text-muted px-5">Designed by AMSA</p>
+
+      <ul class="nav col-md-4 justify-content-end px-5">
+        <li class="nav-item mx-3 mt-2">
+          <a href=""
+            ><box-icon type="logo" name="facebook-square"></box-icon
+          ></a>
+        </li>
+        <li class="nav-item mx-3 mt-2">
+          <a href=""><box-icon type="logo" name="instagram-alt"></box-icon></a>
+        </li>
+        <li class="nav-item mx-3 mt-2">
+          <a href=""
+            ><box-icon type="logo" name="linkedin-square" type="logo"></box-icon
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <!-- Footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

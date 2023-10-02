@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css"
+    />
+
+    <script defer src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script
+      defer
+      src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap5.min.js"
+    ></script>
+    <script defer src="script.js"></script>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <title>AMSA</title>
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" src="materials/AMSA_logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Events
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="timeline.html">Timeline</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="calendar.html">Calendar</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="winners.html">Winners</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle nav-link active"
+                aria-current="page"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Students
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="mtech.html">M Tech</a></li>
+                <li><a class="dropdown-item" href="ms.html">M S</a></li>
+                <li><a class="dropdown-item" href="phd.html">PhD</a></li>
+                <li><a class="dropdown-item" href="all.html">All</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="newsletter.html">Newsletter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="merchandise.html">Merchandise</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Opportunities
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="internship.html">Internship</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="placement.html">Placement</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="phdandpostdoc.html"
+                    >PhD & PostDoc</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="wellness.html">Wellness</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="links.html">Links</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation bar -->
+
+    <!-- Table -->
+
+    <div class="container my-5">
+      <table id="example" class="table table" style="width: 100%">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Roll number</th>
+            <th>Guide name</th>
+            <th>Keywords of area of research</th>
+            <th>Skills</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mohd Meraj Khan</td>
+            <td>AM19D041</td>
+            <td>Anubhab Roy</td>
+            <td>Suspension Particles, EM wave scattering</td>
+            <td>LBM, Python, C</td>
+          </tr>
+          <tr>
+            <td>Ganesh Ramaswamy</td>
+            <td>AM19D203</td>
+            <td>Prof K Ramesh</td>
+            <td>Fracture mechanics; Buckling; Photoelasticity; CW Rails</td>
+            <td>Matlab, Abaqus, In-house software</td>
+          </tr>
+          <tr>
+            <td>Nidhi Murali</td>
+            <td>AM17D039</td>
+            <td>Dr. Pijush Ghosh</td>
+            <td>
+              Geotechnical application of polymer coatings, Soil - structure
+              Interface
+            </td>
+            <td>FTIR, XRD, TGA, NMR</td>
+          </tr>
+          <tr>
+            <td>Pasunuru Sai Vineeth</td>
+            <td>AM21D201</td>
+            <td>Dr. Mahesh V Panchagnula</td>
+            <td>Sports Science; Bounce; Flight; Spin</td>
+            <td>MATLAB</td>
+          </tr>
+          <tr>
+            <td>Saravanan M</td>
+            <td>Am21D010</td>
+            <td>Dr. Babji Srinivasan</td>
+            <td>Sports Science, Biomechanics</td>
+            <td>MATLAB</td>
+          </tr>
+          <tr>
+            <td>Hemant Pratap Singh</td>
+            <td>Am21D017</td>
+            <td>Dr. Satyanarayanan Seshadri</td>
+            <td>Renewable energy microgrid</td>
+            <td>Matlab</td>
+          </tr>
+          <tr>
+            <td>Eswari.B</td>
+            <td>AM19D600</td>
+            <td>Dr. Varadhan SKM</td>
+            <td>
+              Biomedical group: EEG signal processing, biosignal instrumentaion
+            </td>
+            <td>LabVIEW, MATLB</td>
+          </tr>
+          <tr>
+            <td>Anupam Bhaskarbhatta</td>
+            <td>AM22D043</td>
+            <td>Prof Manivannan M</td>
+            <td>Physiological modelling and simulation</td>
+            <td>Python, Matlab</td>
+          </tr>
+          <tr>
+            <td>Gimmi Guruprasad Engoor</td>
+            <td>AM19D012</td>
+            <td>Prof. Nilesh J Vasa; Prof. Sujatha N</td>
+            <td>
+              Biomaterial, Coating, Biocompatiblility, Pulsed Laser Deposition,
+              Radio frequency Sputtering, Antibacterial, Cytocompatibility
+            </td>
+            <td>
+              Biotechnology, Corosion, Metallurgy, XRD, SEM, FTIR, XPS, Cell
+              Cuture,Microbiology
+            </td>
+          </tr>
+          <tr>
+            <td>Valeti Chanikya</td>
+            <td>AM20D010</td>
+            <td>Prof. Prasad Patnaik BSV</td>
+            <td>
+              Bio-Fluid Mechanics, Computational Fluid Dynamics, Fluid-Structure
+              Interactions
+            </td>
+            <td>OpenFOAM, COMSOL Multiphysics, MATLAB, C++</td>
+          </tr>
+          <tr>
+            <td>Dharmi Chand</td>
+            <td>AM19D014</td>
+            <td>Prof. M S Sivakumar</td>
+            <td>Shape morphing soft magnetic materials and robots</td>
+            <td>
+              3D Solidworks, Additive manufacturing, COMSOL, MATLAB, ABAQUS CAE
+            </td>
+          </tr>
+          <tr>
+            <td>Brahmadathan V B</td>
+            <td>AM19D024</td>
+            <td>Prof. C Lakshmana Rao</td>
+            <td>High strain rate behaviour of ceramic materials</td>
+            <td>ABAQUS CAE, MATLAB</td>
+          </tr>
+          <tr>
+            <td>Sourav Dutta</td>
+            <td>AM21D350</td>
+            <td>Prof. V. V. Raghavendra Sai</td>
+            <td>
+              Biosensors development, gold nanoparticle, metal organic
+              framework, small molecule detection
+            </td>
+            <td>
+              UV-VIS spectroscopy, Litesizer (DLS, Zeta Potential), ZetaView (to
+              measure particle conc.), SEM, TEM, FTIR (ATR), Origin, Nanodrop,
+              Fluorescence spectroscopy, AutoCAD, E3D, Autodesk softwares (Plant
+              3D, Revit )
+            </td>
+          </tr>
+          <tr>
+            <td>Mukesh K</td>
+            <td>AM17D038</td>
+            <td>Dr. Mahesh V Panchagnula</td>
+            <td>Exhaled breath, Fluid dynamics, Machine learning</td>
+            <td>Python</td>
+          </tr>
+          <tr>
+            <td>Sandeep Koundinya</td>
+            <td>AM18D033</td>
+            <td>Satyanarayanan Seshadri</td>
+            <td>
+              Energy system modelling - High Temperature Heat pumps, Desiccant
+              cooling System
+            </td>
+            <td>Python, DWSIM, Dymola, MATLAB</td>
+          </tr>
+          <tr>
+            <td>Shubham Verma</td>
+            <td>AM22D602</td>
+            <td>Prof. Arun Kumar Thittai</td>
+            <td>Ultrasound Liver Elastography advance technique development</td>
+            <td>
+              MATLAB, Digital Signal Processing, Medical Image Analysis,
+              Clinical investigation of ultrasound elastography technique
+            </td>
+          </tr>
+          <tr>
+            <td>Mridula T V</td>
+            <td>AM22D002</td>
+            <td>Prof Manivannan M</td>
+            <td>Learning Disability and Virtual Reality</td>
+            <td>Unity</td>
+          </tr>
+          <tr>
+            <td>Kuralamuthan</td>
+            <td>AM21D012</td>
+            <td>Prof Arul Prakash K</td>
+            <td>Viscous heat dissipiation in vertical planetary mixer</td>
+            <td>Solidworks, OpenFOAM, Python</td>
+          </tr>
+          <tr>
+            <td>Parvathy N</td>
+            <td>AM22D003</td>
+            <td>Dr. Varadhan SKM</td>
+            <td>Arm use assessment, sensors, Machine learning/Deep learning</td>
+            <td>Python, Pytorch</td>
+          </tr>
+          <tr>
+            <td>Sadbhawna</td>
+            <td>AM21D202</td>
+            <td>Prof Sujatha N</td>
+            <td>Biophotonics</td>
+            <td>Matlab</td>
+          </tr>
+          <tr>
+            <td>Kavini V</td>
+            <td>AM21D200</td>
+            <td>Dr. N. Sujatha</td>
+            <td>Biophotonics - Optical spectroscopy</td>
+            <td>Matlab</td>
+          </tr>
+          <tr>
+            <td>Subitcha J</td>
+            <td>AM19D004</td>
+            <td>Dr. N. Sujatha</td>
+            <td>Biophotonics, optical spectroscopy</td>
+            <td>Matlab</td>
+          </tr>
+          <tr>
+            <td>Kiran Philip Isaac</td>
+            <td>AM21D021</td>
+            <td>Dr. N. Sujatha</td>
+            <td>Biophotonics, Spectroscopy</td>
+            <td>Matlab, Origin</td>
+          </tr>
+          <tr>
+            <td>Binu Varghese</td>
+            <td>AM17D032</td>
+            <td>Prof. Sarith P Sathian</td>
+            <td>Nanobubbles, Molecular Dynamics</td>
+            <td>Python, Lammps</td>
+          </tr>
+          <tr>
+            <td>Syed Shabbir Ahamed</td>
+            <td>AM22D018</td>
+            <td>Prof. Shaikh Faruque Ali</td>
+            <td>Digital Twin of Dynamical Systems</td>
+            <td>MATLAB, PYTHON</td>
+          </tr>
+          <tr>
+            <td>Shubhanshu Maheshwari</td>
+            <td>AM20D031</td>
+            <td>Prof. Shaikh Faruque Ali</td>
+            <td>Piezoelectric Energy Harvesting</td>
+            <td>MATLAB</td>
+          </tr>
+          <tr>
+            <td>Vijith S</td>
+            <td>AM22D024</td>
+            <td>Dr. Pijush Ghosh</td>
+            <td>Molecular modelling of poymers</td>
+            <td>Python, Lammps</td>
+          </tr>
+          <tr>
+            <td>Prabhash Kumar</td>
+            <td>AM17D205</td>
+            <td>Anubhab Roy</td>
+            <td>Dynamics of Particles in complex fluid flows</td>
+            <td>Python, MATLAB, Mathematica, COMSOL, LaTeX</td>
+          </tr>
+          <tr>
+            <td>Pijush Patra</td>
+            <td>AM17D700</td>
+            <td>Anubhab Roy</td>
+            <td>Cloud Microphysics and Particle-laden Flows</td>
+            <td>Matlab, Mathematica, Fortran</td>
+          </tr>
+          <tr>
+            <td>Sainath H</td>
+            <td>AM15D206</td>
+            <td>Prof Sarith P Sathian</td>
+            <td>
+              Bio microfluidics, meso-scale and nano-scale flow simulations
+            </td>
+            <td>Matlab, C++, Lammps, MPI, Parallel Programming</td>
+          </tr>
+          <tr>
+            <td>Shafin Sharaf</td>
+            <td>AM19D042</td>
+            <td>Prof. Arul Prakash</td>
+            <td>Medical Image Analysis, Fetal Heart Diagnosis</td>
+            <td>Python, ML, Medical Image Analysis</td>
+          </tr>
+          <tr>
+            <td>Navaneeth Krishnan</td>
+            <td>AM19D039</td>
+            <td>Dr. Mahesh V Panchagnula</td>
+            <td>
+              Experimental and Numerical Investigation of Spinning Ball
+              Aerodynamics
+            </td>
+            <td>OpenFOAM, Matlab, Python, Paraview</td>
+          </tr>
+          <tr>
+            <td>Ashish Pandey</td>
+            <td>AM17D031</td>
+            <td>Prof C Lakshmana Rao</td>
+            <td>Study of impact mechanics involved inthe sports of Cricket</td>
+            <td>ABAQUS, MATLAB</td>
+          </tr>
+          <tr>
+            <td>Rohit K</td>
+            <td>AM21D045</td>
+            <td>Prof. Manivannan M</td>
+            <td>
+              Human Classification and Disease diagnosis through Artery Pulse
+              Analysis using the principles of alternative medicines
+            </td>
+            <td>ABAQUS, MATLAB</td>
+          </tr>
+          <tr>
+            <td>Aaditya C Iyer</td>
+            <td>AM19D205</td>
+            <td>Prof. M S Sivakumar</td>
+            <td>Design of orthopaedic implants to decrease stress shielding</td>
+            <td>ABAQUS, MATLAB, SOLIDWORKS, CATIA, C++, ANSYS Workbench</td>
+          </tr>
+          <tr>
+            <td>Swetha Menon</td>
+            <td>AM17D028</td>
+            <td>Prof. V V Raghavendra Sai</td>
+            <td>
+              Metal organic Framework based fiber optic sensors for heavy metal
+              ion detection
+            </td>
+            <td>
+              Advanced materials synthesis, surface functionalization
+              techniques, various characterization tools, simulation tools
+              (ATHENA, SILVACO), MATLAB, Origin, Auto Lab, AutoCAD, OrCAD.
+            </td>
+          </tr>
+          <tr>
+            <td>Debjit Kundu</td>
+            <td>AM20D700</td>
+            <td>Dr. Mahesh V Panchagnula</td>
+            <td>Pulmonary Fluid Mechanics</td>
+            <td>MATLAB</td>
+          </tr>
+          <tr>
+            <td>Pragyandipta Mishra</td>
+            <td>AM19D751</td>
+            <td>Dr. Ilaksh Adlakha</td>
+            <td>Multiscale modeling of materials</td>
+            <td>MATLAB</td>
+          </tr>
+          <tr>
+            <td>Arun krishna B J</td>
+            <td>AM21D400</td>
+            <td>Dr.Ganesh Tamadapu</td>
+            <td>Encapsulated Microbubble dynamics</td>
+            <td>MATLAB</td>
+          </tr>
+          <tr>
+            <td>Nurul Hassan Shah</td>
+            <td>AM21D014</td>
+            <td>Shaikh Faruque Ali</td>
+            <td>Hyperelasticity, Viscoelasticity, Dynamics</td>
+            <td>MATLAB</td>
+          </tr>
+          <tr>
+            <td>Priya Krishnamurthy</td>
+            <td>AM18D025</td>
+            <td>Dr.N.Sujatha</td>
+            <td>Biophotonics, Speckle Imaging</td>
+            <td>Matlab</td>
+          </tr>
+          <tr>
+            <td>Nisanth Kumar P</td>
+            <td>AM20D601</td>
+            <td>Prof BSV Prasad Patnaik</td>
+            <td>
+              Study the hemodynamics of coiling treatment in intracranial
+              aneurysm
+            </td>
+            <td>COMSOL Mlutiphysics</td>
+          </tr>
+          <tr>
+            <td>Anu V. S. Nath</td>
+            <td>AM18D701</td>
+            <td>Anubhab Roy</td>
+            <td>Low Re flows, Hydrodynamic stability, Multiphase flows</td>
+            <td>Matlab, Mathematica, C++</td>
+          </tr>
+          <tr>
+            <td>A S KARTHIKEYAN</td>
+            <td>AM22D006</td>
+            <td>Dr. Babji Srinivasan</td>
+            <td>Computer vision and IOT-based Sports Science, Biomechanics</td>
+            <td>
+              Computer vision(OpenCV, TensorFlow, PyTorch), Internet Of Things
+              with Hardware Engineering, PCB Design (ALTIUM designer, Kicad,
+              EasyEDA, Eagle), Embedded Hardware, micro-controllers (NRF52840,
+              ESP32), microprocessors, Machine Learning, Artificial intelligence
+            </td>
+          </tr>
+          <tr>
+            <td>Deepak V</td>
+            <td>AM19D025</td>
+            <td>Dr. S. Vengadesan</td>
+            <td>Two-phase Newtonian/non-Newtonian flows in microchannel</td>
+            <td>OpenFOAM, Matlab, Paraview</td>
+          </tr>
+          <tr>
+            <td>Pratik Panchal</td>
+            <td>AM22S033</td>
+            <td>Prof BSV Prasad Patnaik</td>
+            <td>
+              Computational fluid dynamics (CFD) analysis of patient-specific
+              circulatory<br />system before and after by-pass surgery
+            </td>
+            <td>
+              C++, SOLIDWORKS, MATLAB, OpenFOAM, Simvascular, Fluent, Paraview,
+              Tecplot
+            </td>
+          </tr>
+          <tr>
+            <td>Janaki R</td>
+            <td>AM20D)14</td>
+            <td>Dr.N.Sujatha</td>
+            <td>Biophotonics, Mueller polarimetry</td>
+            <td>MATLAB</td>
+          </tr>
+          <tr>
+            <td>T Sai Teja</td>
+            <td>AM21D050</td>
+            <td>Prof Arul Prakash K</td>
+            <td>Multiphase flows, Low Re flows, Numerical analysis</td>
+            <td>Solidworks, Ansys (Workbench), MATLAB</td>
+          </tr>
+          <tr>
+            <td>VIKAS BHUMARKER</td>
+            <td>AM21S081</td>
+            <td>Prof BSV Prasad Patnaik</td>
+            <td>
+              thermal hydraulics of 2*2 rod bundle subjected to clad swelling
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Gautham Vigneswar PN</td>
+            <td>AM18D207</td>
+            <td>Prof Shaikh Faruque Ali</td>
+            <td>Morphing wings</td>
+            <td>Solidworks, Abaqus</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Table -->
+
+    <!-- Footer -->
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center bg-light py-1 fixed-bottom"
+    >
+      <p class="col-md-4 mb-0 text-muted px-5">Designed by AMSA</p>
+
+      <ul class="nav col-md-4 justify-content-end px-5">
+        <li class="nav-item mx-3 mt-2">
+          <a href=""
+            ><box-icon type="logo" name="facebook-square"></box-icon
+          ></a>
+        </li>
+        <li class="nav-item mx-3 mt-2">
+          <a href=""><box-icon type="logo" name="instagram-alt"></box-icon></a>
+        </li>
+        <li class="nav-item mx-3 mt-2">
+          <a href=""
+            ><box-icon type="logo" name="linkedin-square" type="logo"></box-icon
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <!-- Footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

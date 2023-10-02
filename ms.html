@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css"
+    />
+
+    <script defer src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script
+      defer
+      src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap5.min.js"
+    ></script>
+    <script defer src="script.js"></script>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <title>AMSA</title>
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" src="materials/AMSA_logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Events
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="timeline.html">Timeline</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="calendar.html">Calendar</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="winners.html">Winners</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle nav-link active"
+                aria-current="page"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Students
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="mtech.html">M Tech</a></li>
+                <li><a class="dropdown-item" href="ms.html">M S</a></li>
+                <li><a class="dropdown-item" href="phd.html">PhD</a></li>
+                <li><a class="dropdown-item" href="all.html">All</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="newsletter.html">Newsletter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="merchandise.html">Merchandise</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Opportunities
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="internship.html">Internship</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="placement.html">Placement</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="phdandpostdoc.html"
+                    >PhD & PostDoc</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="wellness.html">Wellness</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="links.html">Links</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation bar -->
+
+    <!-- Table -->
+    <div class="container my-5">
+      <table id="example" class="table table" style="width: 100%">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Roll number</th>
+            <th>Guide name</th>
+            <th>Keywords of area of research</th>
+            <th>Skills</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Chaitanya Joshi</td>
+            <td>AM22S013</td>
+            <td>Pijush Ghosh</td>
+            <td>Mechanics of materials, Atomistic modeling</td>
+            <td>Python, Lammps, Solidworks, Material Studio</td>
+          </tr>
+          <tr>
+            <td>Nitish Kumar Tripathi</td>
+            <td>AM21S088</td>
+            <td>Baburaj A. P.</td>
+            <td>Heat Pipe</td>
+            <td>Solidworks, Matlab</td>
+          </tr>
+          <tr>
+            <td>Dikshitha CM</td>
+            <td>AM21S025</td>
+            <td>Prof. S.Ramakrishnan</td>
+            <td>Image processing and Machine Learning</td>
+            <td>Matlab,Python,Origin Pro</td>
+          </tr>
+          <tr>
+            <td>Smit Sanjay Bhoir</td>
+            <td>AM22S042</td>
+            <td>C Lakshmana Rao</td>
+            <td>EEG Analysis of Shirodhara treatment</td>
+            <td>Python, SQL, Power BI, SPSS</td>
+          </tr>
+          <tr>
+            <td>Rishabh</td>
+            <td>AM21S009</td>
+            <td>C Lakshmana Rao</td>
+            <td>Shirodhara, Flow Visualisation</td>
+            <td>COMSOL, MATLAB</td>
+          </tr>
+          <tr>
+            <td>Pranav Satish Deshpande</td>
+            <td>AM21S003</td>
+            <td>Manivannan M., Soumya Dutta</td>
+            <td>Wearable/flexible MEMS capacitive force sensor development</td>
+            <td>Semicondcutor manufacturing</td>
+          </tr>
+          <tr>
+            <td>Anand Zambare</td>
+            <td>AM21S004</td>
+            <td>Vagesh D. Narasimhamurthy</td>
+            <td>Turbulent Combustion Modelling/Hydrogen Explosion modelling</td>
+            <td>OpenFOAM, Python scripting, Paraview</td>
+          </tr>
+          <tr>
+            <td>Subham Chakraborty</td>
+            <td>AM22S002</td>
+            <td>Prof. S.Ramakrishnan, Prof. Swathi Sudhakar</td>
+            <td>
+              Medical Image Processing &amp; Informatics, Statistical Genomics
+            </td>
+            <td>Python, MATLAB, ITK-Snap, ImageJ, SPSS</td>
+          </tr>
+          <tr>
+            <td>Deepak S</td>
+            <td>AM21S402</td>
+            <td>Prof. V V Raghvendra Sai</td>
+            <td>
+              Fiber Optic Refractometer: Technololgy Scale Up and Primary Market
+              Research
+            </td>
+            <td>
+              Lean Startup Methodology, Laser Engravers, SLA Printers, Primary
+              &amp; Secondary Market Research
+            </td>
+          </tr>
+          <tr>
+            <td>Rajeev Reddy Sadu</td>
+            <td>AM22S053</td>
+            <td>Prof Baburaj, Prof Anubhab</td>
+            <td>
+              Particle laden flows, Turbulent convection, Natural convection
+            </td>
+            <td>
+              Particle image velocimetry, Particle tracking velocimetry, matlab
+            </td>
+          </tr>
+          <tr>
+            <td>Vaibhav Hiwale</td>
+            <td>AM21S079</td>
+            <td>S Vengadesan</td>
+            <td>Turbulent Heat Transfer</td>
+            <td>ANSYS, MATLAB, DesignXplore, TECPLOT, CFDPost</td>
+          </tr>
+          <tr>
+            <td>Chitumalla Manoj Kumar</td>
+            <td>AM22S009</td>
+            <td>Dr. Vagesh D Narasimhamurthy</td>
+            <td>DNS of Flow past a Staggered Perforated Plate</td>
+            <td>MATLAB, Paraview, Fortran</td>
+          </tr>
+          <tr>
+            <td>Haider Altaf</td>
+            <td>AM22S020</td>
+            <td>Prof Babji Srinivasan</td>
+            <td>Eye tracking, 3D, Photogrammetry</td>
+            <td>Python, Blender, openCV, Unreal engine</td>
+          </tr>
+          <tr>
+            <td>Debiprasad Senapati</td>
+            <td>AM22S046</td>
+            <td>C Lakshmana Rao</td>
+            <td>Sports impact mechanics</td>
+            <td>Abaqus</td>
+          </tr>
+          <tr>
+            <td>Kafayat Abdul Karim</td>
+            <td>AM21S801</td>
+            <td>Prof Satyanarayanan Seshadri</td>
+            <td>Techno-economic analysis of Spectra solar dryer</td>
+            <td>Python, STATA, Rstudio</td>
+          </tr>
+          <tr>
+            <td>Saurabh Mangal</td>
+            <td>AM21S090</td>
+            <td>Prof C Lakshmana Rao</td>
+            <td>
+              Modelling and Simulation, Creep-fatigue interaction, Aero-engine
+            </td>
+            <td>MATLAB, Python, Abaqus, Origin Pro</td>
+          </tr>
+          <tr>
+            <td>Tushar R</td>
+            <td>AM21S026</td>
+            <td>Prof. Arun Kumar Thittai</td>
+            <td>Medical Ultrasound imaging, Coded excitation</td>
+            <td>MATLAB, Python</td>
+          </tr>
+          <tr>
+            <td>Aishwary</td>
+            <td>AM21S077</td>
+            <td>Prof. Sivakumar M S</td>
+            <td>Tensegrity structures</td>
+            <td>MATLAB, Python, Abaqus, Ansys</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Table -->
+
+    <!-- Footer -->
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center bg-light py-1 fixed-bottom"
+    >
+      <p class="col-md-4 mb-0 text-muted px-5">Designed by AMSA</p>
+
+      <ul class="nav col-md-4 justify-content-end px-5">
+        <li class="nav-item mx-3 mt-2">
+          <a href=""
+            ><box-icon type="logo" name="facebook-square"></box-icon
+          ></a>
+        </li>
+        <li class="nav-item mx-3 mt-2">
+          <a href=""><box-icon type="logo" name="instagram-alt"></box-icon></a>
+        </li>
+        <li class="nav-item mx-3 mt-2">
+          <a href=""
+            ><box-icon type="logo" name="linkedin-square" type="logo"></box-icon
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <!-- Footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
