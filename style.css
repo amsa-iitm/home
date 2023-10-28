@@ -147,21 +147,21 @@ body {
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
   
-  -moz-animation: my-animation 10s linear infinite;
-  -webkit-animation: my-animation 10s linear infinite;
-  animation: my-animation 10s linear infinite;
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
 }
 
 /* for Firefox */
 @-moz-keyframes my-animation {
   from { -moz-transform: translateY(100%); }
-  to { -moz-transform: translateY(-150%); }
+  to { -moz-transform: translateY(-100%); }
 }
 
 /* for Chrome */
 @-webkit-keyframes my-animation {
   from { -webkit-transform: translateY(100%); }
-  to { -webkit-transform: translateY(-150%); }
+  to { -webkit-transform: translateY(-120%); }
 }
 
 @keyframes my-animation {
@@ -171,9 +171,9 @@ body {
     transform: translateY(100%);
   }
   to {
-    -moz-transform: translateY(-150%);
-    -webkit-transform: translateY(-150%);
-    transform: translateY(-150%);
+    -moz-transform: translateY(-120%);
+    -webkit-transform: translateY(-120%);
+    transform: translateY(-120%);
   }
 }
 
