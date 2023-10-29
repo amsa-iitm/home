@@ -155,13 +155,13 @@ body {
 /* for Firefox */
 @-moz-keyframes my-animation {
   from { -moz-transform: translateY(100%); }
-  to { -moz-transform: translateY(-100%); }
+  to { -moz-transform: translateY(-140%); }
 }
 
 /* for Chrome */
 @-webkit-keyframes my-animation {
   from { -webkit-transform: translateY(100%); }
-  to { -webkit-transform: translateY(-120%); }
+  to { -webkit-transform: translateY(-140%); }
 }
 
 @keyframes my-animation {
@@ -171,9 +171,9 @@ body {
     transform: translateY(100%);
   }
   to {
-    -moz-transform: translateY(-120%);
-    -webkit-transform: translateY(-120%);
-    transform: translateY(-120%);
+    -moz-transform: translateY(-140%);
+    -webkit-transform: translateY(-140%);
+    transform: translateY(-140%);
   }
 }
 
