@@ -16,74 +16,7 @@
 
     <script defer src="script.js"></script>
 
-    <!-- pie chart -->
-    <script
-      type="text/javascript"
-      src="https://www.gstatic.com/charts/loader.js"
-    ></script>
-    <script type="text/javascript">
-      google.charts.load("current", { packages: ["corechart"] });
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ["Task", "Hours per Day"],
-          ["Energy", 5],
-          ["AI", 2],
-          ["Data science", 2],
-          ["Manufacturing", 2],
-          ["CFD", 7],
-          ["PIV", 4],
-        ]);
-
-        var options = {
-          title: "2022 placements",
-        };
-
-        var chart = new google.visualization.PieChart(
-          document.getElementById("piechart")
-        );
-
-        chart.draw(data, options);
-      }
-    </script>
-    <!-- pie chart -->
-
-    <!-- Histogram -->
-    <script
-      type="text/javascript"
-      src="https://www.gstatic.com/charts/loader.js"
-    ></script>
-    <script type="text/javascript">
-      google.charts.load("current", { packages: ["bar"] });
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ["Year", "Core", "Non-core", "Academia"],
-          ["2017", 1000, 400, 200],
-          ["2018", 1170, 460, 250],
-          ["2019", 660, 1120, 300],
-          ["2020", 1030, 540, 350],
-          ["2021", 1030, 540, 350],
-          ["2022", 1030, 540, 350],
-        ]);
-
-        var options = {
-          chart: {
-            title: "Placement history",
-            // subtitle: 'Sales, Expenses, and Profit: 2014-2017',
-          },
-        };
-
-        var chart = new google.charts.Bar(
-          document.getElementById("columnchart_material")
-        );
-
-        chart.draw(data, google.charts.Bar.convertOptions(options));
-      }
-    </script>
-    <!-- Histogram -->
+    
 
     <title>AMSA</title>
   </head>
@@ -157,6 +90,10 @@
 
             <li class="nav-item">
               <a class="nav-link" href="events.html">Events</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="facilities.html">Facilities</a>
             </li>
 
             <li class="nav-item">
