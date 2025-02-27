@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APL'25 - AMSA Premium League</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            margin: 0;
+            background: linear-gradient(135deg, #777798, #715f7d);
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(12px);
+        }
+        h1 {
+            color: #000000;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 img {
+            width: 150px;
+            margin-left: 15px;
+        }
+        .final-match, .match-schedule, .auction-details {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            color: #ffcc00 ;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        .team-card {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            margin: 10px 0;
+        }
+        .team {
+            text-align: center;
+        }
+        .team img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .team h3 {
+            margin-top: 10px;
+            font-size: 1.4em;
+        }
+        .score {
+            font-size: 2em;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+        .vs {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .match-btn, .team-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #ffcc00;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .match-btn:hover, .team-btn:hover {
+            background: #e6b800;
+        }
+        .schedule-list {
+            text-align: left;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        .schedule-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>APL'25 - AMSA Premium League <img src="materials\gallery\APL25.png"></h1>
+        
+        <div class="final-match">
+            <h2 class="section-title">🏆 Final - Sangam Ground, IIT Madras 🏆</h2>
+            <div class="team-card">
+                <div class="team">
+                    <img src="team1-logo.png" alt="Team A">
+                    <h3>ABC</h3>
+                    <p class="score">129-7</p>
+                    <p>20.0 ov | RR: 6.45</p>
+                    
+                </div>
+                <div class="vs">VS</div>
+                <div class="team">
+                    <img src="team2-logo.png" alt="Team B">
+                    <h3>XYZ</h3>
+                    <p class="score">131-4</p>
+                    <p>18.2 ov | RR: 7.15</p>
+                    
+                </div>
+            </div>
+            <p><strong>XYZ Won by 6 Wickets!</strong></p>
+            
+        </div>
+        
+        <div class="match-schedule">
+            <h2 class="section-title">📅 Match Schedule</h2>
+            <div class="schedule-list">
+                <div class="schedule-item"><strong>Match 1:</strong> A vs B - 10th March</div>
+                <div class="schedule-item"><strong>Match 2:</strong> C vs D - 12th March</div>
+                <div class="schedule-item"><strong>Match 3:</strong> S vs F - 14th March</div>
+            </div>
+            
+            <!--<a href="#" class="match-btn">View Full Schedule</a>-->
+        </div>
+        
+        <div class="auction-details">
+            <h2 class="section-title">🔨 Auction Details & Venue</h2>
+            <p>Newton Hall, IIT Madras.</p>
+            
+        </div>
+    </div>
+</body>
+</html>
