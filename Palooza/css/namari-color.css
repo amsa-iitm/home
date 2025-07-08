@@ -165,23 +165,23 @@ body {
 /* Banner Typography */
 #banner h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 36px;
+    font-size: 48px;
     letter-spacing: 0.02em;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 500;
     color: #ffa200; /* or #ffffff depending on the image background */
-     -webkit-text-stroke: 0.3px #ffa600; /* white stroke */
+     -webkit-text-stroke: 0.3px #ffa200; /* white stroke */
 }
 
 #banner h2 {
     font-family: 'Saira Condensed', sans-serif;
-    font-size: 120px;
+    font-size: 140px;
     font-style: bold;  
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     text-transform: uppercase; /* Optional: makes it all caps */
     color: #ffffff; /* Adjust to fit over your new banner image */
-    -webkit-text-stroke: 0.5px #097287; /* white stroke */
+    -webkit-text-stroke: 1px #000000; /* white stroke */
     
 }
 
