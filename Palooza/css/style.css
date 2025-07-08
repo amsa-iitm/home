@@ -1427,7 +1427,7 @@ blockquote {
 
 .pricing-block-content {
     background: #fff;
-    padding: 25px 0 25px 0;
+    padding: 25px 0 0 0;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.07);
     transition: all 0.2s ease-in-out 0s;
     position: relative;
@@ -1465,7 +1465,7 @@ blockquote {
 
 .pricing {
     background: #f5f5f5;
-    padding: 25px;
+    padding: 10px;
     position: relative;
 }
 
@@ -2333,35 +2333,4 @@ blockquote {
 
 
 
-/* Fix for header misalignment on mobile */
-@media (max-width: 768px) {
-  #banner-content {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-  }
-
-  #banner-content .col-61,
-  #banner-content .col-38 {
-    width: 100% !important;
-    text-align: center !important;
-  }
-
-  #banner-content .section-heading h1,
-  #banner-content .section-heading h2 {
-    padding-left: 0 !important;
-    text-align: center !important;
-  }
-
-  .navbar-brand img {
-    height: 48px !important;
-  }
-
-  .navbar-collapse {
-    text-align: center;
-  }
-}
 
