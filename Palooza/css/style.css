@@ -2333,7 +2333,7 @@ blockquote {
 
 
 
-/* Fix for header misalignment + scaling on mobile */
+/* Fix for header misalignment on mobile */
 @media (max-width: 768px) {
   #banner-content {
     flex-direction: column;
@@ -2341,25 +2341,21 @@ blockquote {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    padding: 1rem;
+    padding: 1rem;text-size-adjust: auto;
   }
 
   #banner-content .col-61,
   #banner-content .col-38 {
     width: 100% !important;
     text-align: center !important;
+    text-size-adjust: auto;
   }
 
-  #banner-content .section-heading h1 {
-    padding-left: 0 !important;
-    text-align: center !important;
-    font-size: 24px !important;
-  }
-
+  #banner-content .section-heading h1,
   #banner-content .section-heading h2 {
     padding-left: 0 !important;
     text-align: center !important;
-    font-size: 36px !important;
+    text-size-adjust: auto;
   }
 
   .navbar-brand img {
@@ -2368,22 +2364,7 @@ blockquote {
 
   .navbar-collapse {
     text-align: center;
+    text-size-adjust: auto;
   }
 
-  /* Fix for intro section using col-38 / col-61 */
-  .col-38,
-  .col-61 {
-    width: 100% !important;
-    display: block;
-    text-align: center !important;
-    padding: 1rem;
-  }
-
-  #about .section-heading h2 {
-    font-size: 32px !important;
-  }
-
-  #about .section-subtitle {
-    font-size: 16px;
-  }
 }
