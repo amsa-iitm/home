@@ -1489,7 +1489,11 @@ blockquote {
     line-height:auto;
     margin:0;
 }
-
+#pricing .row {
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
 
 
 /*------------------------------------------------------------------------------------------*/
@@ -2329,4 +2333,35 @@ blockquote {
 
 
 
+/* Fix for header misalignment on mobile */
+@media (max-width: 768px) {
+  #banner-content {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  #banner-content .col-61,
+  #banner-content .col-38 {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  #banner-content .section-heading h1,
+  #banner-content .section-heading h2 {
+    padding-left: 0 !important;
+    text-align: center !important;
+  }
+
+  .navbar-brand img {
+    height: 48px !important;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+}
 
