@@ -2333,7 +2333,7 @@ blockquote {
 
 
 
-/* Fix for header misalignment on mobile */
+/* Fix for header misalignment + scaling on mobile */
 @media (max-width: 768px) {
   #banner-content {
     flex-direction: column;
@@ -2350,10 +2350,16 @@ blockquote {
     text-align: center !important;
   }
 
-  #banner-content .section-heading h1,
+  #banner-content .section-heading h1 {
+    padding-left: 0 !important;
+    text-align: center !important;
+    font-size: 24px !important;
+  }
+
   #banner-content .section-heading h2 {
     padding-left: 0 !important;
     text-align: center !important;
+    font-size: 36px !important;
   }
 
   .navbar-brand img {
@@ -2362,5 +2368,22 @@ blockquote {
 
   .navbar-collapse {
     text-align: center;
+  }
+
+  /* Fix for intro section using col-38 / col-61 */
+  .col-38,
+  .col-61 {
+    width: 100% !important;
+    display: block;
+    text-align: center !important;
+    padding: 1rem;
+  }
+
+  #about .section-heading h2 {
+    font-size: 32px !important;
+  }
+
+  #about .section-subtitle {
+    font-size: 16px;
   }
 }
