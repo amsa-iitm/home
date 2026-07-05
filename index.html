@@ -1,408 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-
-    <link rel="stylesheet" href="style.css" />
-
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
-    <script defer src="script.js"></script>
-    <title>AMSA</title>
-  </head>
-
-  <body>
-    <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img class="logo" src="materials/AMSA_logo.png" alt="" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | AMSA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+   <header class="site-header">
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="brand-group">
+        <a class="logo-pair" href="index.html">
+          <img src="images/AMSA_logo.png" alt="AMSA logo">
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            
-
-            <li class="nav-item">
-              <a class="nav-link" href="team.html">Our Team</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle nav-link"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Placements
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="placement_team.html">Team</a></li>
-                <li><a class="dropdown-item" href="placement_procedure.html">Registration</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="achievements.html">Achievements</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="events.html">Events</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="palooza.html">Research Palooza'25</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="wellness.html">Wellness</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Gallery</a>
-            </li>
-            
-          </ul>
+        <div>
+          <div class="brand-title">Applied Mechanics Students Association</div>
+          <div class="brand-subtitle">Empower | Connect | Lead</div>
         </div>
       </div>
-    </nav>
-    <!-- Navigation bar -->
-
-    <div class="container my-5">
-      <!-- Carosel -->
-      <div
-        id="carouselExampleCaptions"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="4"
-            aria-label="Slide 5"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="5"
-            aria-label="Slide 6"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="materials\Home\carous_APL2025.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>AMSA Premeier League</h5>
-              <p></p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="materials/Home/carous_palooza.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>AMSA Research Palooza</h5>
-              <p></p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="materials/Home/carous_amsa_eve.jpeg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>AMSA Eve</h5>
-              <p></p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="materials/Home/carous_isro.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>ISRO Visit</h5>
-              <p></p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="materials/Home/carous_guidance.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Guidance Talk</h5>
-              <p></p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="materials/Home/carous_ashok.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Ashok Leyland Visit</h5>
-              <p></p>
-            </div>
-          </div>
-
-          
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <!-- Carousal -->
-
-      
-      <div class="row py-5">
-
-        <!-- About -->
-        <div class="col-md-8">
-
-          <p>
-            The Indian Institute of Technology Madras's Applied Mechanics
-            Student Association (AMSA) is a student-run group that seeks to
-            build a community that grows and thrives over time and gains from
-            the knowledge and experiences of its members. AMSA offers a venue
-            for students to interact with one another, gain knowledge from one
-            another, and develop as a community.
-          </p>
-
-          <p>
-            Workshops, seminars, guest lectures, and social events are just a
-            few of the events and activities that AMSA plans throughout the
-            year. Students can enjoy themselves while developing new skills and
-            networking with professionals at these events.
-          </p>
-
-        </div>
-        <!-- About -->
-
-        <!-- anouncement -->
-        <div class="col-md-4">
-          <h5 class="text-center">Achievers</h5>
-          <div id="scroll-container">
-            <div id="scroll-text">
-
-              <!-- item -->
-              <div class="row align-items-center p-3">
-                <div class="col-3">
-                  <div class="align-items-center">
-                    <img
-                      src="materials\Home\gimmi_1.jpg"
-                      class="img-fluid mx-auto d-block rounded-circle"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-                <div class="col-9">
-                  <h5 class="m-0">Gimmi Guruprasad Engoor </h5>
-                  <p class="text-muted m-0">Emerging Young Researcher Award at ASMP 2024</p>
-                  <p class="text-muted m-0">Guide: Prof. Sujatha N, Prof. N J Vasa</p>
-                </div>
-              </div>
-              <!-- item -->
-               <!-- item -->
-              <div class="row align-items-center p-3">
-                <div class="col-3">
-                  <div class="align-items-center">
-                    <img
-                      src="materials\Home\sameer_1.jpg"
-                      class="img-fluid mx-auto d-block rounded-circle"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-                <div class="col-9">
-                  <h5 class="m-0">Shaikh Sameer Basha</h5>
-                  <p class="text-muted m-0">Best Poster Award (ICONN'25)</p>
-                  <p class="text-muted m-0">Guide: Dr Swathi Sudhakar</p>
-                </div>
-              </div>
-              <!-- item -->
-
-              <!-- item -->
-              <div class="row align-items-center p-3">
-                <div class="col-3">
-                  <div class="align-items-center">
-                    <img
-                      src="materials\Home\Deekshith.jpg"
-                      class="img-fluid mx-auto d-block rounded-circle"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-                <div class="col-9">
-                  <h5 class="m-0">Deekshith Ishwar Poojary</h5>
-                  <p class="text-muted m-0">Best Poster Award at ICNMMF-5</p>
-                  <p class="text-muted m-0">Guide: Prof. Vagesh D. Narasimhamurthy</p>
-                </div>
-              </div>
-              <!-- item -->
-              <!-- item -->
-              <div class="row align-items-center p-3">
-                <div class="col-3">
-                  <div class="align-items-center">
-                    <img
-                      src="materials\achievements\54567.jpg"
-                      class="img-fluid mx-auto d-block rounded-circle"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-                <div class="col-9">
-                  <h5 class="m-0">Brahmadathan V B</h5>
-                  <p class="text-muted m-0">Best paper presentation award at ICCMME 2025</p>
-                  <p class="text-muted m-0">Guide: Prof. C Lakshmana Rao</p>
-                </div>
-              </div>
-              <!-- item -->
-
-              <!-- item -->
-              <div class="row align-items-center p-3">
-                <div class="col-3">
-                  <div class="align-items-center">
-                    <img
-                      src="materials/Home/alok_1.jpg"
-                      class="img-fluid mx-auto d-block rounded-circle"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-                <div class="col-9">
-                  <h5 class="m-0">Alok Kumar</h5>
-                  <p class="text-muted m-0">Best Presentation Award at ICCMME 2024</p>
-                  <p class="text-muted m-0">Guide: Arockiaranjan A</p>
-                </div>
-              </div>
-              <!-- item -->
-
-              
-            <div>
-          </div>
-
-        </div>
-        <!-- anouncement -->
-
-      </div>
-
-      <p class="mt-2"> Please <a href="mailto:amsa@smail.iitm.ac.in">email</a> us the details of your achievements.</p>
-      
+      <a class="institute-link" href="https://www.iitm.ac.in/">
+        <img src="icons/instilogo.jpeg" alt="IIT Madras logo" class="institute-logo">
+        <span class="institute-text">Indian Institute of Technology Madras</span>
+      </a>
     </div>
+  </div>
+  <nav class="nav-inner" aria-label="Primary navigation">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open navigation">Menu</button>
+    <ul class="nav-menu">
+      <li><a data-page="home" href="index.html">Home</a></li>
+      <li><a data-page="about" href="about.html">About Us</a></li>
+      <li><a data-page="events" href="events.html">Events</a></li>
+      <li><a data-page="RP" href="RP.html">Research Palooza'26</a></li>
+      <li><a data-page="students" href="students-hub.html">Students Hub</a></li>
+      <li><a data-page="partner" href="partner.html">Partner With Us</a></li>
+      <li><a data-page="gallery" href="gallery.html">Gallery</a></li>
+      <li><a data-page="contact" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-    
+  <main>
+    <section class="hero-home" aria-label="Featured AMSA activities">
+      <div class="slide is-active"><img src="slideshow/carous_APL.jpg" alt="AMSA Premier League"></div>
+      <div class="slide"><img src="images/Research Palooza 25/IMG_01.jpg" alt="AMSA Research Palooza"></div>
+      <div class="slide"><img src="slideshow/ISRO_CY3_1.jpg" alt="ISRO visit"></div>
+      <div class="slide"><img src="images/Industrial_visit_11_08_2023/Img_1.jpg" alt="Ashok Leyland visit"></div>
+      <div class="home-copy">
+        <!-- <p class="eyebrow">Research Palooza '26</p> -->
+        <h1>Building a stronger Applied Mechanics student community.</h1>
+        <p>AMSA connects students through research talks, industrial exposure, mentorship, sports, and campus events at IIT Madras.</p>
+        <div class="button-row">
+          <a class="btn" href="events.html">Explore Events</a>
+          <a class="btn secondary" href="gallery.html">View Gallery</a>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="icon-btn" type="button" data-slide="prev" aria-label="Previous slide">&lt;</button>
+        <button class="icon-btn" type="button" data-slide="next" aria-label="Next slide">&gt;</button>
+      </div>
+    </section>
 
-    <!-- Footer -->
-    <footer
-      class="d-flex flex-wrap justify-content-between align-items-center bg-light py-1 fixed-bottom"
-    >
-      <p class="col-md-4 mb-0 text-muted px-5">Designed by AMSA</p>
+    <section class="section">
+      <div class="container grid two">
+        <div>
+          <p class="S1">About AMSA</p>
+          <h2>A student-run association for learning, collaboration, and belonging.</h2>
+        </div>
+        <div>
+          <p>The Applied Mechanics Students Association is a student-led group that brings together students across batches to share knowledge, build skills, and learn from each other's academic and professional journeys.</p>
+          <p>Through workshops, seminars, guest lectures, industrial visits, research events, and informal gatherings, AMSA creates spaces where students can connect with peers, faculty, alumni, and industry professionals.</p>
+          <div class="button-row">
+            <a class="btn secondary" href="about.html">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <p class="mb-0 text-muted px-5">Contact us at amsa@smail.iitm.ac.in</p>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Quick Access</p>
+            <h2>Find what you need faster.</h2>
+          </div>
+        </div>
+        <div class="grid quick-grid">
+          <a class="card" href="events.html"><h3>Events</h3><p>Research talks, visits, sports, and student activities in one compact grid.</p></a>
+          <a class="card" href="students-hub.html"><h3>Students Hub</h3><p>Academic support, clubs, mentorship, wellness, and useful student links.</p></a>
+          <a class="card" href="partner.html"><h3>Partner With Us</h3><p>Collaborate with AMSA for talent, outreach, sponsorship, and research exchange.</p></a>
+          <a class="card" href="gallery.html"><h3>Gallery</h3><p>View photos across multiple events without scrolling through one long section.</p></a>
+          <a class="card" href="contact.html"><h3>Contact</h3><p>Reach the association for queries, proposals, and student support.</p></a>
+          <a class="card" href="about.html"><h3>Our Team</h3><p>Meet the faculty guidance and student teams powering AMSA activities.</p></a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-      <ul class="nav col-md-4 justify-content-end px-5">
-        <li class="nav-item mx-3 mt-2">
-          <a href="materials\jun_nov_2024.pdf" target="_blank"
-            ><img
-              class="callogo float-end"
-              src="materials/Calendar_Logo.png"
-              alt=""
-          /></a>
-        </li>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>AMSA</strong> | amsa@smail.iitm.ac.in</p>
+      <div class="footer-socials">
+      <a class="social-icon" href="https://x.com/AMSA_IITM" target="_blank" rel="noopener" aria-label="Twitter">
+        <img src="icons/twitter4.jpeg" alt="">
+      </a>
 
-        <li class="nav-item mx-3 mt-2">
-          <a href="https://twitter.com/AMSA_IITM" target="_blank"
-            ><box-icon type="logo" name="twitter"></box-icon
-          ></a>
-        </li>
+      <a class="social-icon" href="https://www.instagram.com/amsa_iitm/" target="_blank" rel="noopener" aria-label="Instagram">
+        <img src="icons/insta2" alt="">
+      </a>
 
-        <li class="nav-item mx-3 mt-2">
-          <a
-            href="https://instagram.com/amsa_iitm?igshid=YTQwZjQ0NmI0OA=="
-            target="_blank"
-            ><box-icon type="logo" name="instagram-alt"></box-icon
-          ></a>
-        </li>
-      </ul>
-    </footer>
-    <!-- Footer -->
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <a class="social-icon" href="https://in.linkedin.com/company/applied-mechanics-biomedical-engineering" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="icons/link2" alt="">
+      </a>
+      </div>
+      <p>&copy; 2026 AMSA</p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
 </html>
