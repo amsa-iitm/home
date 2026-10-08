@@ -18,6 +18,9 @@ import ResourcesPortal from './pages/student-hub/ResourcesPortal';
 import Achievements from './pages/student-hub/Achievements';
 import WellnessPortal from './pages/student-hub/WellnessPortal';
 
+// Standalone event page
+import ResearchPalooza from './pages/ResearchPalooza';
+
 export default function App() {
   return (
     <HashRouter>
@@ -33,6 +36,10 @@ export default function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/announcements" element={<Announcements />} />
           <Route path="/contact" element={<Contact />} />
+          
+          {/* Research Palooza Standalone Event Routes */}
+          <Route path="/research-palooza" element={<ResearchPalooza />} />
+          <Route path="/researchpalooza" element={<ResearchPalooza />} />
           
           {/* Events Subroutes */}
           <Route path="/events/upcoming/EventDetails" element={<Navigate to="/events" replace />} />

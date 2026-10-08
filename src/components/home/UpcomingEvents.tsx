@@ -50,9 +50,9 @@ export default function UpcomingEvents() {
 
         {/* Events Grid (2 Upcoming + 1 Recent Completed Event) */}
         {featuredEvents.length > 0 ? (
-          <div className="flex flex-wrap justify-center gap-8 mt-8">
+          <div className="flex flex-wrap justify-center gap-6 lg:gap-8 mt-8">
             {featuredEvents.map((event, index) => (
-              <div key={event.id} className="w-full sm:w-[calc((100%-32px)/2)] lg:w-[calc((100%-64px)/3)] max-w-md flex-shrink-0 flex flex-col h-full">
+              <div key={event.id} className="w-full sm:w-[calc((100%-1.5rem)/2)] lg:w-[calc((100%-4rem)/3)] max-w-md flex flex-col h-full">
                 <EventCard 
                   event={event} 
                   index={index} 

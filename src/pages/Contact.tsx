@@ -52,7 +52,7 @@ export default function Contact() {
     setIsSubmitting(true);
     setErrorMessage(null);
 
-    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "cc48cf72-4957-489b-a479-2b8db4003b98";
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "b6ec8e44-21d5-4721-a1b5-9856b6c2cf5a";
 
     const formData = new FormData(e.currentTarget);
     formData.append("access_key", accessKey);

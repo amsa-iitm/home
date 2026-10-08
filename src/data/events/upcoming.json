@@ -1,32 +1,32 @@
 [
   {
-    "id": "26_apl_badminton",
-    "title": "APL Badminton Tournament (Doubles)",
-    "date": "2026-09-19",
-    "category": "Sports",
-    "description": "AMSA Premier League begin officialy. Get ready to battle it all out in the first sporting tournament of the academic year, Doubles Badminton. Register Now using the link below.",
-    "location": "Sitara Indoor Sports Complex",
-    "time": "09:00 AM - 03:00 PM",
-    "poster": "",
-    "speaker": "",
+    "id": "26_workshop_danny",
+    "title": "How to Tell a Story",
+    "date": "2026-10-09",
+    "category": "Workshop",
+    "description": "A hands-on-workshop, this session will guide you through the art of impactful scientific storytelling to help you present your research effectively and engagingly.", 
+    "location": "Newton Hall",
+    "time": "03:00 PM - 05:00 PM",
+    "poster": "images/events/workshop_danny.png",
+    "speaker": "Dr. Danny Raj M",
     "edition": "",
-    "link": "https://forms.gle/67rxq6DCyktp14VQA"
+    "link": "https://forms.gle/fXCMAv4YHjmypmEa7"
   },
 
 
   {
-    "id": "26_freshers",
-    "title": "AMSA Fresher's Night",
-    "date": "2026-09-25",
+    "id": "26_research_palooza",
+    "title": "Research Palooza 2026",
+    "date": "2026-10-17",
     "category": "Event",
-    "description": "Celebrating the arrival of 2026 freshers, loud and proud. Join us in kickstarting your journey in the department with food, dance and lots of memories.",
-    "location": "Students Activity Center (SAC)",
-    "time": "From 06:00 PM",
+    "description": "A day designed to bring together students, researchers, faculty, and industry to experience research from multiple perspectives — from emerging technologies and technical communication to demonstrations, entrepreneurship, industry engagement and real-world translation.",
+    "location": "IC&SR Building",
+    "time": "08:30 AM - 05:30 PM",
     "poster": "",
     "video": "",
-    "speaker": "",
+    "speaker": "Open To All",
     "speaker2": "",
-    "edition": "2026",
+    "edition": "",
     "link": ""
   }
 ]

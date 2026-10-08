@@ -53,7 +53,7 @@ export default function Team() {
 
           <div className="flex flex-wrap justify-center gap-6 lg:gap-8">
             {advisors.map((advisor) => (
-              <div key={advisor.id} className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-24px)] max-w-xs sm:max-w-none">
+              <div key={advisor.id} className="w-full sm:w-[calc((100%-1.5rem)/2)] lg:w-[calc((100%-6rem)/4)] max-w-xs sm:max-w-none">
                 <TeamCard member={advisor} />
               </div>
             ))}
@@ -70,7 +70,7 @@ export default function Team() {
 
           <div className="flex flex-wrap justify-center gap-6 lg:gap-8">
             {secretaries.map((secretary) => (
-              <div key={secretary.id} className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-24px)] max-w-xs sm:max-w-none">
+              <div key={secretary.id} className="w-full sm:w-[calc((100%-1.5rem)/2)] lg:w-[calc((100%-6rem)/4)] max-w-xs sm:max-w-none">
                 <TeamCard member={secretary} />
               </div>
             ))}
@@ -95,7 +95,7 @@ export default function Team() {
                 
                 <div className="flex flex-wrap justify-center gap-6 lg:gap-8">
                   {vertical.members.map((member) => (
-                    <div key={member.id} className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-24px)] max-w-xs sm:max-w-none">
+                    <div key={member.id} className="w-full sm:w-[calc((100%-1.5rem)/2)] lg:w-[calc((100%-6rem)/4)] max-w-xs sm:max-w-none">
                       <TeamCard member={member} />
                     </div>
                   ))}

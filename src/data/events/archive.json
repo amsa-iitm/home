@@ -286,5 +286,35 @@
     "video": "",
     "albumId": "",
     "speaker": "Intellectual Property Management Cell"
+  },
+  {
+    "id": "26_apl_badminton",
+    "title": "APL Badminton Tournament",
+    "date": "2026-09-19",
+    "edition": "Men's and Women's Doubles",
+    "category": "Sports",
+    "description": "AMSA Premier League begin officialy. Get ready to battle it all out in the first sporting tournament of the academic year, Doubles Badminton.",
+    "location": "Sitara Indoor Sports Complex",
+    "time": "09:00 AM - 03:30 PM",
+    "outcome": "36 teams participated in this high-octane sporting event. Teams fought against each other with the final teams competing for the ultimate glory.",
+    "poster": "/images/events/",
+    "video": "",
+    "albumId": "apl-badminton-26-27",
+    "speaker": ""
+  },
+  {
+    "id": "26_event_002",
+    "title": "AMSA Eve 2026",
+    "date": "2026-09-25",
+    "category": "Event",
+    "edition": "Freshers' Night",
+    "description": "Celebrating the arrival of 2026 freshers, loud and proud. Join us in kickstarting your journey in the department with food, dance and lots of memories.",
+    "location": "Students Activity Center (SAC)",
+    "time": "From 06:00 PM",
+    "outcome": "A celebratory day with music, performances, food and dance, ending on a high note with DJ night.",
+    "poster": "/images/events/amsa_eve_26.jpeg",
+    "video": "",
+    "albumId": "amsa-eve-26",
+    "speaker": ""
   }
 ]

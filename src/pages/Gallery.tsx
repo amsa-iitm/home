@@ -199,7 +199,7 @@ export default function Gallery() {
             {/* Ambient wall spotlight effect */}
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(251,191,36,0.07)_0%,_transparent_70%)] pointer-events-none -z-10"></div>
             
-            <div className="relative w-[450px] xl:w-[500px] h-[330px] xl:h-[350px]">
+            <div className="relative w-[450px] xl:w-[500px] h-[330px] xl:h-[350px] scale-90 xl:scale-100 origin-right">
               {/* Photo 1 (Top-Left) */}
               <div 
                 className="group absolute top-0 left-0 xl:left-2 w-[140px] xl:w-[155px] bg-[#fafaf9] p-2 xl:p-2.5 pb-5 xl:pb-6 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.6),0_6px_10px_-4px_rgba(0,0,0,0.4)] border border-paper/30 rounded-[2px] transform -rotate-6 transition-all duration-300 hover:rotate-0 hover:scale-105 hover:-translate-y-1.5 hover:shadow-[0_20px_35px_-8px_rgba(0,0,0,0.8)] z-10 hover:z-40 select-none"
