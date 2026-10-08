@@ -1,3 +1,45 @@
+html {
+  /* Normalize font scaling across Chrome, Edge, and Firefox */
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Standard default root font scale */
+  font-size: 16px;
+}
+
+/* On common laptops and scaled displays (<= 1366px): 
+   gentle 6.25% rem reduction prevents typography and cards from looking oversized */
+@media (max-width: 1366px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* On tablets and small screens (<= 1024px) */
+@media (max-width: 1024px) {
+  html {
+    font-size: 14.5px;
+  }
+}
+
+/* On mobile devices (<= 640px) */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* On ultra-wide displays (>= 1920px) */
+@media (min-width: 1920px) {
+  html {
+    font-size: 16px;
+  }
+}
+
 body {
   font-family: var(--font-sans);
   font-weight: 400;
@@ -24,4 +66,18 @@ h1, h2, h3, h4, h5, h6 {
 /* Montserrat font class */
 .font-montserrat {
   font-family: var(--font-montserrat);
+}
+
+/* Direct font-face declaration for Six Caps to guarantee font delivery across all hosting providers */
+@font-face {
+  font-family: 'Six Caps';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/sixcaps/v23/6ae_4KGrU7VR7bNmabcS.ttf') format('truetype');
+}
+
+/* Six Caps display font for Research Palooza title */
+.font-sixcaps {
+  font-family: 'Six Caps', var(--font-sixcaps, "Six Caps", "Impact", sans-serif) !important;
 }

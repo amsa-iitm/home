@@ -5,10 +5,11 @@ import Footer from '../components/Footer';
 interface MainLayoutProps {
   title?: string;
   description?: string;
+  variant?: 'default' | 'crimson';
   children: React.ReactNode;
 }
 
-export default function MainLayout({ title, description, children }: MainLayoutProps) {
+export default function MainLayout({ title, description, variant = 'default', children }: MainLayoutProps) {
   useEffect(() => {
     if (title) {
       document.title = title;
@@ -23,13 +24,13 @@ export default function MainLayout({ title, description, children }: MainLayoutP
 
   return (
     <div className="min-h-screen flex flex-col w-full bg-transparent">
-      <Navbar />
+      <Navbar variant={variant} />
 
       <main className="grow flex flex-col w-full">
         {children}
       </main>
 
-      <Footer />
+      <Footer variant={variant} />
     </div>
   );
 }

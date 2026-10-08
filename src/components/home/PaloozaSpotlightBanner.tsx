@@ -61,7 +61,10 @@ export default function PaloozaSpotlightBanner() {
               {/* Title in Six Caps */}
               <div className="space-y-1">
                 <Link to="/research-palooza" className="group/title inline-block">
-                  <h2 className="font-sixcaps text-5xl sm:text-6xl md:text-7xl lg:text-7xl tracking-[0.18em] sm:tracking-[0.22em] text-[#ea586c] group-hover/title:text-[#f5be67] transition-colors leading-none">
+                  <h2
+                    className="font-sixcaps text-5xl sm:text-6xl md:text-7xl lg:text-7xl tracking-[0.18em] sm:tracking-[0.22em] text-[#ea586c] group-hover/title:text-[#f5be67] transition-colors leading-none"
+                    style={{ fontFamily: "'Six Caps', Impact, -apple-system, sans-serif" }}
+                  >
                     RESEARCH PALOOZA '26
                   </h2>
                 </Link>

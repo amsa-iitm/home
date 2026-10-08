@@ -48,7 +48,10 @@ export default function PaloozaHero() {
           
           {/* Main Title in Six Caps with Increased Letter Spacing & Single Pinkish-Red Color */}
           <div className="space-y-1">
-            <h1 className="font-sixcaps text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl 2xl:text-9xl font-normal tracking-[0.14em] sm:tracking-[0.18em] leading-[0.92] text-[#ea586c] drop-shadow-[0_4px_25px_rgba(234,88,108,0.35)] uppercase">
+            <h1
+              className="font-sixcaps text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl 2xl:text-9xl font-normal tracking-[0.14em] sm:tracking-[0.18em] leading-[0.92] text-[#ea586c] drop-shadow-[0_4px_25px_rgba(234,88,108,0.35)] uppercase"
+              style={{ fontFamily: "'Six Caps', Impact, -apple-system, sans-serif" }}
+            >
               <span className="block">
                 RESEARCH
               </span>

@@ -3,3 +3,28 @@
 @import "../typography/fonts.css";
 @import "../spacing/layout.css";
 @import "../animations/motion.css";
+
+/* Universal box-sizing reset for consistent cross-browser dimensions */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent horizontal viewport distortion and unintended scroll across browsers */
+html,
+body {
+  overflow-x: clip;
+  max-width: 100vw;
+  width: 100%;
+}
+
+/* Responsive media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
