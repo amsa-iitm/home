@@ -288,11 +288,14 @@ export default function Navbar({ variant = 'default' }: NavbarProps) {
               </span>
               <span className="text-[12px] text-[#ff8b7a] group-hover:translate-x-0.5 transition-transform">→</span>
             </div>
-            <div className="font-sixcaps text-3xl tracking-[0.16em] text-white group-hover:text-[#f5be67] transition-colors leading-none">
+            <div
+              className="font-sixcaps text-3xl tracking-[0.16em] text-white group-hover:text-[#f5be67] transition-colors leading-none"
+              style={{ fontFamily: "'Six Caps', Impact, -apple-system, sans-serif" }}
+            >
               RESEARCH PALOOZA '26
             </div>
             <p className="font-display italic text-[11.5px] text-slate-200 mt-1 leading-snug">
-              Oct 17, 2026 • 7 Events • ₹25,000 Prize
+              Oct 17, 2026 • 7 Flagship Events • TTJ Auditorium, IC&SR
             </p>
           </Link>
 
